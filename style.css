@@ -1,0 +1,55 @@
+body{
+    background-color: yellow;
+}
+.container{
+    display: flex;
+    height: 900px;
+    width: 1200px;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+.left-side{
+    width: 50%;
+}
+.right-side{
+    width: 50%;
+ 
+}
+.content{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.right-side h3{
+    width: 100%;
+}
+.sauces label input{
+    margin-right: 5px;
+}
+.cheese label input{
+    margin-right: 5px;
+}
+.choose{
+    margin-top: 50px;
+}
+
+.toppings label input{
+    margin-right: 5px;
+}
+.pan{
+    background-image: url(resources/pan.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+.pan img{
+    position: absolute;
+}
+.topping, .cheese, .sauce{
+    opacity: 0;
+}
+.opacity{
+    opacity: 1;
+}

@@ -3,9 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Pizza Builder</title>
 </head>
 <body>
-  
+  <div>
+    <h1 style="text-align: center;">
+      CREATE YOUR OWN PIZZA
+    </h1>
+  </div>
+  <div class="container">
+    <div class="left-side">
+      <div class="pan">
+        <img src="resources/sauce-bbq.png" alt="" id="sauce-0" class="sauce" width="500px" >
+        <img src="resources/sauce-hot.png" alt="" id="sauce-1" class="sauce" width="500px" >
+        <img src="resources/sauce-marinara.png" alt="" id="sauce-2" class="sauce" width="500px" >
+        <img src="resources/sauce-ranch.png" alt="" id="sauce-3" class="sauce" width="500px" >
+        <img src="resources/cheese-cheddar.png" alt="" id="cheese-0" width="500px" class="cheese">
+        <img src="resources/cheese-extra-cheddar.png" alt="" id="cheese-1" width="500px" class="cheese">
+        <img src="resources/cheese-extra-mozzarella.png" alt="" id="cheese-2" width="500px" class="cheese">
+        <img src="resources/cheese-mozzarella.png" alt="" id="cheese-3" width="500px" class="cheese">
+        <img src="resources/cheese-parmcheese.png" alt="" id="cheese-4" width="500px" class="cheese">
+        <img src="resources/cheese-mega-mozzarella.png" alt="" id="cheese-5" width="500px" class="cheese">
+        <img src="resources/topping-bacon.png" alt="" id="topping-0" class="topping" width="500px">
+        <img src="resources/topping-chicken.png" alt="" id="topping-1" class="topping" width="500px">
+        <img src="resources/topping-ham.png" alt="" id="topping-2" class="topping" width="500px">
+        <img src="resources/topping-italian.png" alt="" id="topping-3" class="topping" width="500px">
+        <img src="resources/topping-mushrooms.png" alt="" id="topping-4" class="topping" width="500px">
+        <img src="resources/topping-olives.png" alt="" id="topping-5" class="topping" width="500px">
+        <img src="resources/topping-onions.png" alt="" id="topping-6" class="topping" width="500px">
+        <img src="resources/topping-peperonni.png" alt="" id="topping-7" class="topping" width="500px">
+        <img src="resources/topping-peppers.png" alt="" id="topping-8" class="topping" width="500px">
+        <img src="resources/topping-pineapple.png" alt="" id="topping-9" class="topping" width="500px">
+        <img src="resources/topping-spinach.png" alt="" id="topping-10" class="topping" width="500px">
+        <img src="resources/topping-tomatoes.png" alt="" id="topping-11" class="topping" width="500px">
+
+      </div>>
+    </div>
+    <div class="right-side">
+      <div class="content">
+        <h3>Choose Your Sauce</h3>
+        <label><input type="radio" name="sauce" value="sauce-0" onchange="add('sauce', 'sauce-0')">Marinara</label>
+        <label><input type="radio" name="sauce" value="sauce-1" onchange="add('sauce', 'sauce-1')">Ranch</label>
+        <label><input type="radio" name="sauce" value="sauce-2" onchange="add('sauce', 'sauce-2')">BBQ Sauce</label>
+        <label><input type="radio" name="sauce" value="sauce-3" onchange="add('sauce', 'sauce-3')">Hot Sauce</label>
+      </div>
+      <div class="content">
+        <h3 class="choose">Choose Your Cheese</h3>
+        <label><input type="radio" name="cheese" value="cheese-0" onchange="add('cheese', 'cheese-0')">Mozzarella</label>
+        <label><input type="radio" name="cheese" value="cheese-1" onchange="add('cheese', 'cheese-1')">Extra Mozzarella</label>
+        <label><input type="radio" name="cheese" value="cheese-2" onchange="add('cheese', 'cheese-2')">So Much Mozzarella</label>
+        <label><input type="radio" name="cheese" value="cheese-3" onchange="add('cheese', 'cheese-3')">Parmesan</label>
+        <label><input type="radio" name="cheese" value="cheese-4" onchange="add('cheese', 'cheese-4')">Cheddar Cheese</label>
+        <label><input type="radio" name="cheese" value="cheese-5" onchange="add('cheese', 'cheese-5')">Extra Cheddar</label>
+      </div>
+      <div class="content">
+        <h3 class="choose">
+          Choose Your Toppings
+        </h3>
+        <label><input type="checkbox" name="topping-0" value="topping-0" onchange="add('topping', 'topping-0', this.checked)">Bacon</label>
+        <label><input type="checkbox" name="topping-1" value="topping-1" onchange="add('topping', 'topping-1', this.checked)">Chicken</label>
+        <label><input type="checkbox" name="topping-2" value="topping-2" onchange="add('topping', 'topping-2', this.checked)">Ham</label>
+        <label><input type="checkbox" name="topping-3" value="topping-3" onchange="add('topping', 'topping-3', this.checked)">Italian Sausage</label>
+        <label><input type="checkbox" name="topping-4" value="topping-4" onchange="add('topping', 'topping-4', this.checked)">Mushrooms</label>
+        <label><input type="checkbox" name="topping-5" value="topping-5" onchange="add('topping', 'topping-5', this.checked)">Black Olives</label>
+        <label><input type="checkbox" name="topping-6" value="topping-6" onchange="add('topping', 'topping-6', this.checked)">Onions</label>
+        <label><input type="checkbox" name="topping-7" value="topping-7" onchange="add('topping', 'topping-7', this.checked)">Peperonni</label>
+        <label><input type="checkbox" name="topping-8" value="topping-8" onchange="add('topping', 'topping-8', this.checked)">Peppers</label>
+        <label><input type="checkbox" name="topping-9" value="topping-9" onchange="add('topping', 'topping-9', this.checked)">Pineapple</label>
+        <label><input type="checkbox" name="topping-10" value="topping-10" onchange="add('topping', 'topping-10', this.checked)">Spinach</label>
+        <label><input type="checkbox" name="topping-11" value="topping-11" onchange="add('topping', 'topping-11', this.checked)">Tomatoes</label>
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
