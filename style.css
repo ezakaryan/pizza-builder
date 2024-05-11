@@ -7,7 +7,7 @@ body{
     width: 1200px;
     padding: 20px 20px;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 100px;
 }
 .left-side{
     width: 50%;
@@ -53,3 +53,39 @@ body{
 .opacity{
     opacity: 1;
 }
+
+
+@media only screen and (max-width: 450px) {
+    body {
+        .container{
+            display: inline-block;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+        .pan{
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+        }
+        .topping, .cheese, .sauce{
+            width: 150px;
+            opacity: 0;
+        }
+        .right-side{
+            width: 25%;
+        }
+        .left-side{
+            position: fixed;
+            top: 100px;
+        }
+        input[type='radio'], input[type='checkbox']{
+            margin-right: 15px;
+        }
+        label{
+            font-size: 20px;
+        }
+    }
+  }
+  
